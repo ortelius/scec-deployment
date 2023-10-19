@@ -44,18 +44,18 @@ func GetDeployments(c *fiber.Ctx) error {
 
 	defer cursor.Close() // close the cursor when returning from this function
 
-	deployment := model.NewDeployments() // define a list of deployments to be returned
+	var deployments []*model.Deployment // define a list of deployments to be returned
 
 	for cursor.HasMore() { // loop thru all of the documents
 
 		deployment := model.NewDeployment() // fetched deployment
-		var meta driver.DocumentMeta           // data about the fetch
+		var meta driver.DocumentMeta        // data about the fetch
 
 		// fetch a document from the cursor
 		if meta, err = cursor.ReadDocument(ctx, deployment); err != nil {
 			logger.Sugar().Errorf("Failed to read document: %v", err)
 		}
-		deployments.Deployments = append(deployments.Deployments, deployment)       // add the deployment to the list
+		deployments = append(deployments, deployment)                        // add the deployment to the list
 		logger.Sugar().Infof("Got doc with key '%s' from query\n", meta.Key) // log the key
 	}
 
@@ -93,7 +93,7 @@ func GetDeployment(c *fiber.Ctx) error {
 
 	defer cursor.Close() // close the cursor when returning from this function
 
-	deployment := model.NewDeployments() // define a deployment to be returned
+	deployment := model.NewDeployment() // define a deployment to be returned
 
 	if cursor.HasMore() { // deployment found
 		var meta driver.DocumentMeta // data about the fetch
@@ -124,10 +124,10 @@ func GetDeployment(c *fiber.Ctx) error {
 // @Router /msapi/deployment [post]
 func NewDeployment(c *fiber.Ctx) error {
 
-	var err error                  // for error handling
-	var meta driver.DocumentMeta   // data about the document
-	var ctx = context.Background() // use default database context
-	deployment := new(model.Deployment)    // define a deployment to be returned
+	var err error                       // for error handling
+	var meta driver.DocumentMeta        // data about the document
+	var ctx = context.Background()      // use default database context
+	deployment := new(model.Deployment) // define a deployment to be returned
 
 	if err = c.BodyParser(deployment); err != nil { // parse the JSON into the deployment object
 		return c.Status(503).Send([]byte(err.Error()))
@@ -149,10 +149,10 @@ func NewDeployment(c *fiber.Ctx) error {
 // setupRoutes defines maps the routes to the functions
 func setupRoutes(app *fiber.App) {
 
-	app.Get("/swagger/*", swagger.HandlerDefault) // handle displaying the swagger
-	app.Get("/msapi/deployment", GetDeployments)          // list of deployments
-	app.Get("/msapi/deployment/:key", GetDeployment)      // single deployment based on name or key
-	app.Post("/msapi/deployment", NewDeploymentn)          // save a single deployment
+	app.Get("/swagger/*", swagger.HandlerDefault)    // handle displaying the swagger
+	app.Get("/msapi/deployment", GetDeployments)     // list of deployments
+	app.Get("/msapi/deployment/:key", GetDeployment) // single deployment based on name or key
+	app.Post("/msapi/deployment", NewDeployment)     // save a single deployment
 }
 
 // @title Ortelius v11 deployment Microservice
