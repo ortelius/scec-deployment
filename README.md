@@ -1,63 +1,73 @@
-# Ortelius v11 Domain Microservice
-RestAPI for the Domain Object
+# Ortelius v11 deployment Microservice
 
-## Version: 11.0.0
+> Version 11.0.0
 
-### Terms of service
-<http://swagger.io/terms/>
+RestAPI for the Deployment Object
+![Release](https://img.shields.io/github/v/release/ortelius/scec-deployment?sort=semver)
+![license](https://img.shields.io/github/license/ortelius/scec-deployment)
 
-**Contact information:**
-Ortelius Google Group
-ortelius-dev@googlegroups.com
+![Build](https://img.shields.io/github/actions/workflow/status/ortelius/scec-deployment/build-push-chart.yml)
+[![MegaLinter](https://github.com/ortelius/scec-deployment/workflows/MegaLinter/badge.svg?branch=main)](https://github.com/ortelius/scec-deployment/actions?query=workflow%3AMegaLinter+branch%3Amain)
+![CodeQL](https://github.com/ortelius/scec-deployment/workflows/CodeQL/badge.svg)
+[![OpenSSF-Scorecard](https://api.securityscorecards.dev/projects/github.com/ortelius/scec-deployment/badge)](https://api.securityscorecards.dev/projects/github.com/ortelius/scec-deployment)
 
-**License:** [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
+![Discord](https://img.shields.io/discord/722468819091849316)
 
----
-### /msapi/domain
+## Path Table
 
-#### GET
-##### Summary
+| Method | Path | Description |
+| --- | --- | --- |
+| GET | [/msapi/deployment](#getmsapideployment) | Get a List of Deployments |
+| POST | [/msapi/deployment](#postmsapideployment) | Create a Deployment |
+| GET | [/msapi/deployment/:key](#getmsapideploymentkey) | Get a Deployment |
 
-Get a List of Domains
+## Reference Table
 
-##### Description
+| Name | Path | Description |
+| --- | --- | --- |
 
-Get a list of domains for the user.
+## Path Details
 
-##### Responses
+***
 
-| Code | Description |
-|------|-------------|
-| 200  | OK          |
+### [GET]/msapi/deployment
 
-#### POST
-##### Summary
+- Summary  
+Get a List of Deployments
 
-Create a Domain
+- Description  
+Get a list of deploymentss.
 
-##### Description
+#### Responses
 
-Create a new Domain and persist it
+- 200 OK
 
-##### Responses
+***
 
-| Code | Description |
-|------|-------------|
-| 200  | OK          |
+### [POST]/msapi/deployment
 
-### /msapi/domain/:key
+- Summary  
+Create a Deployment
 
-#### GET
-##### Summary
+- Description  
+Create a new Deployment and persist it
 
-Get a Domain
+#### Responses
 
-##### Description
+- 200 OK
 
-Get a domain based on the _key or name.
+***
 
-##### Responses
+### [GET]/msapi/deployment/:key
 
-| Code | Description |
-|------|-------------|
-| 200  | OK          |
+- Summary  
+Get a Deployment
+
+- Description  
+Get a deployment based on the _key or name.
+
+#### Responses
+
+- 200 OK
+
+## References
