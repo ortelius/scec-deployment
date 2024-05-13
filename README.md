@@ -4,7 +4,7 @@
 
 RestAPI for the Deployment Object
 ![Release](https://img.shields.io/github/v/release/ortelius/scec-deployment?sort=semver)
-![license](https://img.shields.io/github/license/ortelius/scec-deployment)
+![license](https://img.shields.io/github/license/ortelius/.github)
 
 ![Build](https://img.shields.io/github/actions/workflow/status/ortelius/scec-deployment/build-push-chart.yml)
 [![MegaLinter](https://github.com/ortelius/scec-deployment/workflows/MegaLinter/badge.svg?branch=main)](https://github.com/ortelius/scec-deployment/actions?query=workflow%3AMegaLinter+branch%3Amain)
