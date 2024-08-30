@@ -71,16 +71,6 @@ github.com/multiformats/go-multihash v0.2.3 h1:7Lyc8XfX/IY2jWb/gI7JP+o7JEq9hOa7B
 github.com/multiformats/go-multihash v0.2.3/go.mod h1:dXgKXCXjBzdscBLk9JkjINiEsCKRVch90MdaGiKsvSM=
 github.com/multiformats/go-varint v0.0.7 h1:sWSGR+f/eu5ABZA2ZpYKBILXTTs9JWpdEM/nEGOHFS8=
 github.com/multiformats/go-varint v0.0.7/go.mod h1:r8PUYw/fD/SjBCiKOoDlGF6QawOELpZAu9eioSos/OU=
-github.com/ortelius/scec-commons v0.1.34 h1:gvt71uhQsimp/J7N758qK6E6Uw8+VzecFvoQJqEWq3Y=
-github.com/ortelius/scec-commons v0.1.34/go.mod h1:tR9iMNnuz4bAqDM70t8OSH+g0LtoA32t3HJ5w59L4Tk=
-github.com/ortelius/scec-commons v0.1.36 h1:55f4oxCBXwZC1B8NL0Tuk511HGExu7o9U1O9UzBw5Q8=
-github.com/ortelius/scec-commons v0.1.36/go.mod h1:tR9iMNnuz4bAqDM70t8OSH+g0LtoA32t3HJ5w59L4Tk=
-github.com/ortelius/scec-commons v0.1.38 h1:5eWzPq/ivAficApPhHkuspop/zyCOdZIdhZuDaobMGI=
-github.com/ortelius/scec-commons v0.1.38/go.mod h1:tR9iMNnuz4bAqDM70t8OSH+g0LtoA32t3HJ5w59L4Tk=
-github.com/ortelius/scec-commons v0.1.39 h1:IOp2n62n0x+CiiO6aX9X00HA9Q+xp1aCAj7Jeld6eIY=
-github.com/ortelius/scec-commons v0.1.39/go.mod h1:tR9iMNnuz4bAqDM70t8OSH+g0LtoA32t3HJ5w59L4Tk=
-github.com/ortelius/scec-commons v0.1.43 h1:o3vbk6oST3C2x3hlr1+AqmfZ799SeXSPcqrUrFF+lrM=
-github.com/ortelius/scec-commons v0.1.43/go.mod h1:tR9iMNnuz4bAqDM70t8OSH+g0LtoA32t3HJ5w59L4Tk=
 github.com/ortelius/scec-commons v0.1.45 h1:o0dFZUh73mEhGzwFqJ6Xf9Z+pF+JJfYK80xju1c5rSk=
 github.com/ortelius/scec-commons v0.1.45/go.mod h1:tR9iMNnuz4bAqDM70t8OSH+g0LtoA32t3HJ5w59L4Tk=
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
@@ -133,8 +123,8 @@ golang.org/x/sys v0.0.0-20220811171246-fbc7d0a398ab/go.mod h1:oPkhp1MJrh7nUepCBc
 golang.org/x/sys v0.5.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.6.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.12.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
-golang.org/x/sys v0.23.0 h1:YfKFowiIMvtgl1UERQoTPPToxltDeZfbj4H7dVUCwmM=
-golang.org/x/sys v0.23.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=
+golang.org/x/sys v0.24.0 h1:Twjiwq9dn6R1fQcyiK+wQyHWfaz/BJB+YIpzU/Cv3Xg=
+golang.org/x/sys v0.24.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=
 golang.org/x/text v0.17.0 h1:XtiM5bkSOt+ewxlOE/aE/AKEHibwj/6gvWMl9Rsh0Qc=
 golang.org/x/text v0.17.0/go.mod h1:BuEKDfySbSR4drPmRPG/7iBdf8hvFMuRexcpahXilzY=
 golang.org/x/tools v0.24.0 h1:J1shsA93PJUEVaUSaay7UXAyE8aimq3GW0pjlolpa24=
