@@ -2,6 +2,17 @@ apiVersion: v1
 entries:
   scec-deployment:
   - apiVersion: v2
+    appVersion: 11.0.726
+    created: "2024-09-06T16:46:21.826618891Z"
+    description: Domain microservice
+    digest: 073766f1c4cb8c52888f7f9aa61a58145f1b9c0e6fe0bb7402e49578c5d4fec7
+    icon: https://ortelius.github.io/ortelius-charts/logo.png
+    name: scec-deployment
+    type: application
+    urls:
+    - https://github.com/ortelius/scec-deployment/releases/download/scec-deployment-11.0.726/scec-deployment-11.0.726.tgz
+    version: 11.0.726
+  - apiVersion: v2
     appVersion: 11.0.724
     created: "2024-09-06T03:17:01.149021091Z"
     description: Domain microservice
@@ -3279,4 +3290,4 @@ entries:
     urls:
     - https://github.com/ortelius/scec-deployment/releases/download/scec-deployment-11.0.11/scec-deployment-11.0.11.tgz
     version: 11.0.11
-generated: "2024-09-06T03:17:01.148702281Z"
+generated: "2024-09-06T16:46:21.826273006Z"
