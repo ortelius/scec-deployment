@@ -8,7 +8,7 @@ require (
 	github.com/arangodb/go-driver/v2 v2.1.1
 	github.com/gofiber/fiber/v2 v2.52.5
 	github.com/ortelius/scec-commons v0.1.46
-	github.com/swaggo/swag v1.16.3
+	github.com/swaggo/swag v1.16.4
 )
 
 require (
