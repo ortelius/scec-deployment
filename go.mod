@@ -1,11 +1,11 @@
 module github.com/ortelius/scec-deployment
 
-go 1.22
+go 1.22.0
 
-toolchain go1.22.6
+toolchain go1.23.3
 
 require (
-	github.com/arangodb/go-driver/v2 v2.1.1
+	github.com/arangodb/go-driver/v2 v2.1.2
 	github.com/gofiber/fiber/v2 v2.52.5
 	github.com/ortelius/scec-commons v0.1.46
 	github.com/swaggo/swag v1.16.4
@@ -20,8 +20,8 @@ require (
 	github.com/swaggo/files/v2 v2.0.1 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
-	golang.org/x/net v0.28.0 // indirect
-	golang.org/x/text v0.17.0 // indirect
+	golang.org/x/net v0.31.0 // indirect
+	golang.org/x/text v0.20.0 // indirect
 )
 
 require (
@@ -56,8 +56,8 @@ require (
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasthttp v1.55.0 // indirect
 	github.com/valyala/tcplisten v1.0.0 // indirect
-	golang.org/x/crypto v0.26.0 // indirect
-	golang.org/x/sys v0.24.0 // indirect
+	golang.org/x/crypto v0.29.0 // indirect
+	golang.org/x/sys v0.27.0 // indirect
 	golang.org/x/tools v0.24.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	lukechampine.com/blake3 v1.3.0 // indirect
