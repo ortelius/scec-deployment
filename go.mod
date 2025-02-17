@@ -7,7 +7,7 @@ toolchain go1.23.3
 require (
 	github.com/arangodb/go-driver/v2 v2.1.2
 	github.com/gofiber/fiber/v2 v2.52.6
-	github.com/ortelius/scec-commons v0.1.47
+	github.com/ortelius/scec-commons v1.0.3
 	github.com/swaggo/swag v1.16.4
 )
 
