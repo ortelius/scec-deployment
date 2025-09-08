@@ -3,9 +3,9 @@ module github.com/ortelius/scec-deployment
 go 1.24.2
 
 require (
-	github.com/arangodb/go-driver/v2 v2.1.4
+	github.com/arangodb/go-driver/v2 v2.1.5
 	github.com/gofiber/fiber/v2 v2.52.9
-	github.com/ortelius/scec-commons v0.1.47
+	github.com/ortelius/scec-commons v0.1.48
 	github.com/swaggo/swag v1.16.6
 )
 
@@ -49,7 +49,7 @@ require (
 	github.com/multiformats/go-multibase v0.2.0 // indirect
 	github.com/multiformats/go-multicodec v0.9.2 // indirect
 	github.com/multiformats/go-multihash v0.2.3 // indirect
-	github.com/multiformats/go-varint v0.0.7 // indirect
+	github.com/multiformats/go-varint v0.1.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
